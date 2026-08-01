@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عداد التسبيح</title>
+<script async="async" data-cfasync="false" src="//pl27038215.profitableratecpm.com/1e1e3bbdcc4b8bbc0e0e2f2e2e2e2e2e/invoke.js"></script>
+<div id="container-1e1e3bbdcc4b8bbc0e0e2f2e2e2e2e2e"></div>
+<style>
+body { background: #000; color: white; text-align: center; font-family: sans-serif; padding-top: 50px; }
+#count { font-size: 80px; color: #00ff88; margin: 20px; }
+button { padding: 15px 30px; font-size: 20px; margin: 10px; border: none; border-radius: 10px; cursor: pointer; }
+</style>
+</head>
+<body>
+<h1>سبحان الله</h1>
+<div id="count">0</div>
+<button style="background:red; color:white;" onclick="reset()">إعادة</button>
+<button style="background:green; color:white;" onclick="add()">اضغط للتسبيح</button>
+<script>
+let c = localStorage.getItem('c') || 0;
+document.getElementById('count').innerText = c;
+function add(){ c++; localStorage.setItem('c', c); document.getElementById('count').innerText = c; }
+function reset(){ c=0; localStorage.setItem('c', c); document.getElementById('count').innerText = c; }
+</script>
+</body>
+</html>
